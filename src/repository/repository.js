@@ -5,7 +5,7 @@ export default class DataRepository
     getDeck()
     {
         Api.getDeck();
-        const deck = JSON.parse(sessionStorage.getItem('deck'));
+        const deck = JSON.parse(localStorage.getItem('deck'));
         console.log(deck);
         deck.forEach(item => {
             switch (item.value)
